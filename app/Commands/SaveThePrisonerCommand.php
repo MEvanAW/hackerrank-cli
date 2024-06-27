@@ -5,8 +5,6 @@ namespace App\Commands;
 use Illuminate\Console\Scheduling\Schedule;
 use LaravelZero\Framework\Commands\Command;
 
-use function Termwind\{render};
-
 class SaveThePrisonerCommand extends Command
 {
     /**
@@ -14,7 +12,7 @@ class SaveThePrisonerCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'hackerrank:save-the-prisoner {name=Artisan}';
+    protected $signature = 'hackerrank:save-the-prisoner';
 
     /**
      * The description of the command.
