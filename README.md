@@ -25,6 +25,8 @@ Laravel Zero was created by [Nuno Maduro](https://github.com/nunomaduro) and [Ow
 - [Laravel Zero Documentation](#laravel-zero-documentation)
 - [Hackerrank Challenges](#hackerrank-challenges)
   - [Save the Prisoner!](#save-the-prisoner)
+- [Laravel (Zero) Features Practice](#laravel-zero-features-practice)
+  - [Defining Input Expectations of Artisan](#defining-input-expectations-of-artisan)
 ## Laravel Zero Documentation
 
 For full documentation, visit [laravel-zero.com](https://laravel-zero.com/).
@@ -36,3 +38,8 @@ https://www.hackerrank.com/challenges/save-the-prisoner/problem
 Is solved using SaveThePrisonerCommand.php writing output to OUTPUT.txt
 
 `php hackerrank-cli hackerrank:save-the-prisoner`
+## Laravel (Zero) Features Practice
+### Defining Input Expectations of Artisan
+https://laravel.com/docs/11.x/artisan#defining-input-expectations
+
+Is practiced by ArgumentCommand.php
