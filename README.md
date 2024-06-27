@@ -1,3 +1,6 @@
+# hackerrank-cli
+Laravel Zero project to learn about Laravel Zero itself and solve Hackerrank PHP challenges.
+
 <p align="center">
     <img title="Laravel Zero" height="100" src="https://raw.githubusercontent.com/laravel-zero/docs/master/images/logo/laravel-zero-readme.png" alt="Laravel Zero Logo" />
 </p>
@@ -18,17 +21,18 @@ Laravel Zero was created by [Nuno Maduro](https://github.com/nunomaduro) and [Ow
 - Integration with [Collision](https://github.com/nunomaduro/collision) - Beautiful error reporting
 
 ------
-
-## Documentation
+## Contents
+- [Laravel Zero Documentation](#laravel-zero-documentation)
+- [Hackerrank Challenges](#hackerrank-challenges)
+  - [Save the Prisoner!](#save-the-prisoner)
+## Laravel Zero Documentation
 
 For full documentation, visit [laravel-zero.com](https://laravel-zero.com/).
 
-## Support the development
-**Do you like this project? Support it by donating**
+## Hackerrank Challenges
+### Save the Prisoner!
+https://www.hackerrank.com/challenges/save-the-prisoner/problem
 
-- PayPal: [Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=66BYDWAT92N6L)
-- Patreon: [Donate](https://www.patreon.com/nunomaduro)
+Is solved using SaveThePrisonerCommand.php writing output to OUTPUT.txt
 
-## License
-
-Laravel Zero is an open-source software licensed under the MIT license.
+`php hackerrank-cli hackerrank:save-the-prisoner`
