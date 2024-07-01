@@ -6,15 +6,10 @@ use Illuminate\Contracts\Foundation\Application;
 
 class InfoService implements IInfoService
 {
-    private Application $app;
-
-    public function __construct(Application $app)
+    public function fwrite(string $text): void
     {
-        $this->app = $app;
-    }
-
-    public function info(string $text): void
-    {
-        $this->app->info($text);
+        $fptr = fopen("OUTPUT.txt", "w");
+        fwrite($fptr, $text);
+        fclose($fptr);
     }
 }

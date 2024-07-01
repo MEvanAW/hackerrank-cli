@@ -4,5 +4,5 @@ namespace App\Services;
 
 interface IInfoService
 {
-    public function info(string $text);
+    public function fwrite(string $text);
 }

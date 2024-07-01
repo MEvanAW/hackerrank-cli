@@ -2,7 +2,7 @@
 
 namespace App\Commands;
 
-use App\Services;
+use App\Services\IInfoService;
 use Illuminate\Console\Scheduling\Schedule;
 use LaravelZero\Framework\Commands\Command;
 
@@ -13,7 +13,7 @@ class ServiceCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'laravel:service';
+    protected $signature = 'laravel:service {text=info} {--make}';
 
     /**
      * The console command description.
@@ -25,9 +25,16 @@ class ServiceCommand extends Command
     /**
      * Execute the console command.
      */
-    public function handle()
+    public function handle(IInfoService $infoService)
     {
-        app()->make('Info');
+        if ($this->option('make'))
+        {
+            app()->make('Info');
+        }
+        else
+        {
+            $infoService->fwrite($this->argument('text'));
+        }
     }
 
     /**
